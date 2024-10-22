@@ -28,9 +28,13 @@ document.addEventListener("mousemove", function(event) {
 // Generar enemigos con imágenes por JS
 function generarEnemigo() {
     let enemigo = document.createElement("img");
+<<<<<<< Updated upstream
     enemigo.setAttribute("class", "enemigo");
     enemigo.setAttribute("src", "img/enemigo1.jpg");
     enemigo.src="/img/enemigo" + String(Math.floor(Math.random() * 7) + 1) + ".png";
+=======
+    enemigo.setAttribute("src", "/img/enemigo" + String(Math.floor(Math.random() * 7) + 1) + ".png");
+>>>>>>> Stashed changes
     let posicionX = Math.floor(Math.random() * (window.innerWidth - 100)); // Ajusta para no salir de la pantalla
     let posicionY = Math.floor(Math.random() * (window.innerHeight - 100));
     enemigo.style.position = "absolute";
