@@ -31,16 +31,13 @@ document.addEventListener("mousemove", function(event) {
 function generarEnemigo() {
     let enemigo = document.createElement("img");
     enemigo.setAttribute("class", "enemigo");
-<<<<<<< Updated upstream
-    enemigo.setAttribute("src", "./img/enemigo" + String(Math.floor(Math.random() * 7) + 1) + ".png");
-    let posicionX = Math.floor(Math.random() * (window.innerWidth - 100)); // Ajusta para no salir de la pantalla
-    let posicionY = Math.floor(Math.random() * (window.innerHeight - 100));
-=======
+
     enemigo.setAttribute("src", "/img/enemigo" + String(Math.floor(Math.random() * 7) + 1) + ".png");
     let posicionX = Math.floor(Math.random() * (window.innerWidth - 200)); // Ajusta para no salir de la pantalla
     let posicionY = Math.floor(Math.random() * (window.innerHeight - 200));
->>>>>>> Stashed changes
     enemigo.style.position = "absolute";
+    enemigo.style.width = "300px";
+    enemigo.style.height = "300px";
     enemigo.style.top = posicionY + "px";
     enemigo.style.left = posicionX + "px";
 
