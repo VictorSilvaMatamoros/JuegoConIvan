@@ -1,8 +1,8 @@
-* {
+body {
     background-image: url('img/MAPA.jpg');
     background-size: contain; /* Ajusta la imagen para que se vea entera */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed;
+    
     margin: 0;
     padding: 0;
     height: 100vh; /* Asegura que cubra toda la ventana del navegador */

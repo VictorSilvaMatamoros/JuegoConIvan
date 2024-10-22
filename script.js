@@ -4,6 +4,9 @@ let contador = document.getElementById("timer");
 let tiempo = 10;
 let enemigoContainer = document.getElementById("enemigos");
 
+let contadorPuntos = document.createElement("puntos"); 
+contadorPuntos.setAttribute("id", "puntos");
+
 // Generar temporizador
 let temporizador = setInterval(function() {
     tiempo--;
@@ -39,6 +42,7 @@ function generarEnemigo() {
 
     // Hacer que el enemigo desaparezca cuando se hace clic en él (disparo)
     enemigo.addEventListener("click", function() {
+        contadorPuntos.innerHTML = "Puntos: " + contadorPuntos++;
         enemigo.remove(); // Elimina el enemigo cuando se hace clic en él
     });
 }
