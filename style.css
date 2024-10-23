@@ -1,10 +1,11 @@
 body {
     background-image: url('imganesnoenemigo/MAPA.jpg');
-    background-size: contain; /* Ajusta la imagen para que se vea entera */
+    background-size: cover; /* Cubre todo el ancho y alto de la pantalla */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la pantalla */
     
     margin: 0;
     padding: 0;
-    height: 100vh; /* Asegura que cubra toda la ventana del navegador */
-    width: 2000px;  /* Asegura que cubra todo el ancho del navegador */
+    height: 100vh; /* Cubre el 100% de la altura del viewport */
+    width: 100vw;  /* Cubre el 100% del ancho del viewport */
 }

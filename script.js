@@ -32,7 +32,7 @@ function generarEnemigo() {
     let enemigo = document.createElement("img");
     enemigo.setAttribute("class", "enemigo");
 
-    enemigo.setAttribute("src", "/img/enemigo" + String(Math.floor(Math.random() * 7) + 1) + ".png");
+    enemigo.setAttribute("src", "./img/enemigo" + String(Math.floor(Math.random() * 7) + 1) + ".png");
     let posicionX = Math.floor(Math.random() * (window.innerWidth - 200)); // Ajusta para no salir de la pantalla
     let posicionY = Math.floor(Math.random() * (window.innerHeight - 200));
     enemigo.style.position = "absolute";
